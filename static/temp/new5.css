@@ -1,0 +1,125 @@
+/*get rid of default padding and margin*/
+*{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+header,nav,article,section,footer,aside{
+	display:block;
+}
+/*centeriing website */
+.container{
+	width:100%;
+	height:1200px;
+	background-image:url(back2.jpg);
+	background-repeat:no repeat;
+	background-position:center;
+}
+
+.clear{
+	clear:both;
+}
+.logo{
+	height:100px;
+	width:260px;
+	float:left;
+	margin:20px 20px;
+}
+.top_nav{
+	float:left;
+	width:800px;
+	margin:0px 0px;
+}
+
+.top_nav ul li{
+	float:left;
+	padding:20px 20px;
+	margin:40px 15px;
+	background-color:red;
+	text-align:center;
+	border-radius:10px;
+	background-image:linear-gradient(to top, #01DF01 20%,#00FF00 40%,#2EFE2E 100%);
+}
+fieldset{
+	width:600px;
+	margin-left:20px;
+}
+
+fieldset legend{
+	font-weight:bold;
+}
+.personal_info label{
+	float:left;
+	width:150px;
+	font-weight:bold;
+    color:blue;
+	text-align:right;
+	margin-right:20px;
+}
+
+.service label{
+	padding-left:20px;
+	float:left;
+	width:160px;
+	font-weight:bold;
+    color:blue;
+	text-align:left;
+	margin-right:20px;
+	
+}
+
+/*float aside and main section*/
+.left_side{
+	float:left;
+	width:60%;
+	margin:0px 40px;
+}
+
+.left_side ul li{
+	padding:5px;
+	margin-right:10px;
+}
+
+.right_side{
+	float:left;
+	width:20%;
+	margin:0px 20px;
+	border:5px ridge blue;
+	padding:10px;
+	background-color:white;
+	font-size:20px;
+}
+
+.left_side article{
+	border:5px ridge blue;
+	margin-right:10px;
+	padding:10px;
+	background-color:white;
+}
+.left_side header{
+	background-color:white;
+	padding:20px 20px;
+	border:8px ridge blue;
+	margin:0px 0px 10px 0px;
+	font-size:20px;
+}
+.left_side p{
+	padding:10px 10px;
+	text-align:justify;
+}
+.left_side span{
+	color:green;
+	text-decoration:underline;
+}
+
+.right_side div{
+	border:2px solid blue;
+	margin:0px 0px 10px 0px; /*top left bottom right*/
+	padding:10px;
+}
+/*make footer clear floated elements*/
+.page_footer{
+	clear:both;
+	text-align:center;
+}

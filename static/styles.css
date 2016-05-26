@@ -1,0 +1,32 @@
+table{
+  border:10px solid black;
+  border-collapse:collapse;
+  margin:20px 40px;
+  text-align:center;  
+}
+
+.myclass table span{
+  font-size:40px;
+  padding-bottom:15px;
+  padding:20px 0px 0px 20px;;
+}
+
+th,td{
+  border:3px ridge blue;
+  padding:10px;
+  font-size:30px;
+}
+
+tr:nth-child(2n){
+  background-color:white;
+}
+
+thead{
+  background-color:#ccddee;
+}
+tfoot{
+  background-color:#ddccee;
+  text-align:center;
+  font-size:15px;
+  font-style:italic;
+}

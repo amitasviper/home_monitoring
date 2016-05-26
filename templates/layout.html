@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang=''>
+<head>
+   {% block head %}
+   <meta charset='utf-8'>
+   <script src="{{ url_for('static', filename ='jquery-latest.min.js') }}" type="text/javascript"></script>
+   <script src="{{ url_for('static', filename='socket.io.min.js') }}" type="text/javascript"></script>
+   
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+   
+   {% endblock %}
+
+   <title>{% block title %}
+      -Home Monitoring
+      {% endblock %}
+   </title>
+</head>
+<body>
+   
+   <div id="page">
+      <div id="content">
+         {% block content %}{% endblock %}
+      </div><br><br>
+
+      <div id="footer">
+         {% block footer %}
+            &copy; <a href="#">Akash</a>.
+         {% endblock %}
+      </div>
+   </div>
+
+</body>
+<html>

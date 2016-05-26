@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block title %}
+	{% if title %}
+		{{ title }}
+	{% else %}
+		Docker Monitoring
+	{% endif %}
+{% endblock %}
+{% block head %}
+{{ super() }}
+<script src="{{ url_for('static', filename='highcharts.js') }}" type="text/javascript"></script>
+{% endblock %}
+
+{% block content %}
+
+    <table class="table_mainscreen">
+    	<tr>
+    		<td>
+    			<div class="table_element">
+    				Amit
+    			</div>
+    		</td>
+    		<td>
+    			<div class="table_element">
+    				<span>Amit</span>
+    			</div>
+    		</td>
+    		<td>
+    			<div class="table_element">
+    				<span>Amit</span>
+    			</div>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>Amit</td>
+    		<td>Amit</td>
+    		<td>Amit</td>
+    	</tr>
+    	<tr>
+    		<td>Amit</td>
+    		<td>Amit</td>
+    		<td>Amit</td>
+    	</tr>
+    </table>
+
+{% endblock %}
